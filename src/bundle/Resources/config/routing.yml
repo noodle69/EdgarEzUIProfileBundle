@@ -1,0 +1,9 @@
+edgar.ezuiprofile.menu:
+    path: /user/profile
+    defaults:
+        _controller: 'EdgarEzUIProfileBundle:Profile:menu'
+
+edgar.ezuiprofile.profile:
+    path: /user/profile/view
+    defaults:
+        _controller: 'EdgarEzUIProfileBundle:Profile:profile'
