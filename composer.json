@@ -2,7 +2,7 @@
   "name": "edgar/ez-uiprofile-bundle",
   "license": "GPL-2.0",
   "type": "ezplatform-bundle",
-  "description": "eZ Platform",
+  "description": "eZ Platform profile managment",
   "minimum-stability": "dev",
   "authors": [
     {
