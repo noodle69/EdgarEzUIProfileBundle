@@ -3,7 +3,7 @@
 {% block content %}
     <div class="row align-items-stretch ez-main-row">
         {% block left_sidebar %}
-            <div class="col-sm-1 bg-dark pt-4 ez-side-menu"> {# @todo sidebars should be moved to layout.html.twig !! #}
+            <div class="col-sm-1 bg-dark pt-4 ez-side-menu">
                 {{ knp_menu_render('edgar_ezuiprofile.menu.profile.sidebar_left', {'template': '@EzPlatformAdminUi/parts/menu/sidebar_left.html.twig'}) }}
             </div>
         {% endblock left_sidebar %}
