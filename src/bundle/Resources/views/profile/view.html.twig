@@ -11,16 +11,24 @@
         <div class="col-sm-11 px-0 pb-4">
             <div class="ez-header pt-1 pb-2">
                 <div class="container">
-                    {% include '@EzPlatformAdminUi/parts/page_title.html.twig' with {
-                        title: 'Manage user security and profile'
-                    } %}
+                    {% block subtitle %}
+                        {% include '@EdgarEzUIProfile/parts/page_title.html.twig' with {
+                            title: 'Manage profile and security',
+                            iconName: 'author',
+                            subtitle: subtitle|default('')
+                        } %}
+                    {% endblock %}
                 </div>
             </div>
 
-            <div class="panel panel-primary">
-                <div class="panel-body">
-
-                </div>
+            <div class="container-fluid ez-main-container">
+                <section class="container mt-4">
+                    {% block profilecontent %}
+                        {% trans %}
+                            Manage your user profile, security configuration ...
+                        {% endtrans %}
+                    {% endblock %}
+                </section>
             </div>
         </div>
     </div>

@@ -12,7 +12,7 @@ use Knp\Menu\ItemInterface;
 class LeftSidebarBuilder extends AbstractBuilder implements TranslationContainerInterface
 {
     /* Menu items */
-    const ITEM__PROFILE = 'sidebar_left__profile';
+    const ITEM__PASSWORD = 'sidebar_left__password';
 
     /**
      * @return string
@@ -35,9 +35,10 @@ class LeftSidebarBuilder extends AbstractBuilder implements TranslationContainer
 
         $menu->addChild(
             $this->createMenuItem(
-                self::ITEM__PROFILE,
+                self::ITEM__PASSWORD,
                 [
-                    'route' => 'edgar.ezuiprofile.profile',
+                    'route' => 'edgar.ezuiprofile.password',
+                    'extras' => ['icon' => 'lock'],
                 ]
             )
         );
@@ -51,7 +52,7 @@ class LeftSidebarBuilder extends AbstractBuilder implements TranslationContainer
     public static function getTranslationMessages(): array
     {
         return [
-            (new Message(self::ITEM__PROFILE, 'menu'))->setDesc('Profile'),
+            (new Message(self::ITEM__PASSWORD, 'menu'))->setDesc('Manage your password'),
         ];
     }
 

@@ -6,9 +6,22 @@
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
+      <trans-unit id="c589639ca45b231ce38317d1763dab99b9b41f5e" resname="                            Manage your user profile, security configuration ...&#10;                        ">
+        <source xml:space="preserve">                            Manage your user profile, security configuration ...
+                        </source>
+        <target xml:space="preserve" state="new">                            Manage your user profile, security configuration ...
+                        </target>
+        <note>key:                             Manage your user profile, security configuration ...
+                        </note>
+      </trans-unit>
+      <trans-unit id="824befe0c06c917773e5860b17861cab0c7af187" resname="Manage your password">
+        <source>Manage your password</source>
+        <target state="new">Manage your password</target>
+        <note>key: Manage your password</note>
+      </trans-unit>
       <trans-unit id="cc4475eeeef236fc0ab492647acdfeae6ffd2cf8" resname="user__content__profile">
         <source>Profile</source>
-        <target state="new">Profile</target>
+        <target>Profile</target>
         <note>key: user__content__profile</note>
       </trans-unit>
     </body>

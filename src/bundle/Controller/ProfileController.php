@@ -13,4 +13,10 @@ class ProfileController extends Controller
         return $this->render('@EdgarEzUIProfile/profile/view.html.twig', [
         ]);
     }
+
+    public function passwordAction(Request $request): Response
+    {
+        return $this->render('@EdgarEzUIProfile/profile/password/view.html.twig', [
+        ]);
+    }
 }

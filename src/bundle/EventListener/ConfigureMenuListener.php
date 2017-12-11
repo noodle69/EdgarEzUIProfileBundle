@@ -19,7 +19,12 @@ class ConfigureMenuListener implements TranslationContainerInterface
         $menu = $event->getMenu();
 
         $cronsMenu = $menu->getChild(UserMenuBuilder::ITEM_LOGOUT);
-        $cronsMenu->getParent()->addChild(self::ITEM_PROFILE, ['route' => 'edgar.ezuiprofile.menu']);
+        $cronsMenu->getParent()->addChild(
+            self::ITEM_PROFILE,
+            [
+                'route' => 'edgar.ezuiprofile.menu',
+            ]
+        );
     }
 
     /**
