@@ -1,3 +1,0 @@
-# EdgarEzUIProfileBundle
-
-## Usage
