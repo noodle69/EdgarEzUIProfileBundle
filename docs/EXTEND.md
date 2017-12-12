@@ -54,4 +54,5 @@ replace all entries <...>
     Acme\AcmeBundle\EventListener\ConfigureMenuListener:
         public: true
         tags:
+          - { name: kernel.event_listener, event: edgar_ezuiprofile.menu_configure.profile_sidebar_left, method: onMenuConfigure }
 ```
