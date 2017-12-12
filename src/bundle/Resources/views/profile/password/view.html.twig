@@ -6,5 +6,21 @@
 {% endblock %}
 
 {% block profilecontent %}
+    {{ form_start(form_password, { 'action': path('edgar.ezuiprofile.password') }) }}
+        <div class="ez-extra-actions__section-content ez-extra-actions__section-content--content-type">
+            {{ form_label(form_password.oldPassword) }}
+            {{ form_widget(form_password.oldPassword) }}
+            <br />
+            {{ form_widget(form_password.newPassword) }}
+            <br />
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-primary">
+                <svg class="ez-icon ez-icon-search-button">
+                    <use xlink:href="{{ asset('bundles/ezplatformadminui/img/ez-icons.svg') }}#search"></use>
+                </svg>
+                {{ 'filter_password.submit'|trans|desc('Submit') }}</button>
+            </span>
+        </div>
+    {{ form_end(form_password) }}
 {% endblock %}
 

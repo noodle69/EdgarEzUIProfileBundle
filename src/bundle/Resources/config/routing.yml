@@ -6,4 +6,4 @@ edgar.ezuiprofile.menu:
 edgar.ezuiprofile.password:
     path: /user/profile/password
     defaults:
-        _controller: 'EdgarEzUIProfileBundle:Profile:password'
+        _controller: 'EdgarEzUIProfileBundle:Password:password'
