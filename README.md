@@ -16,3 +16,5 @@ This bundle is extendable, so we can imagine many other features (configure user
 [Installation](docs/INSTALL.md)
 
 [Extend](docs/EXTEND.md)
+
+[![Screencast]](http://youtu.be/wKSjlwh5gNU?hd=1 "Screencast")
