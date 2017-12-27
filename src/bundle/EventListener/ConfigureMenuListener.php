@@ -3,7 +3,6 @@
 namespace Edgar\EzUIProfileBundle\EventListener;
 
 use EzSystems\EzPlatformAdminUi\Menu\Event\ConfigureMenuEvent;
-use EzSystems\EzPlatformAdminUi\Menu\UserMenuBuilder;
 use JMS\TranslationBundle\Model\Message;
 use JMS\TranslationBundle\Translation\TranslationContainerInterface;
 
@@ -18,8 +17,7 @@ class ConfigureMenuListener implements TranslationContainerInterface
     {
         $menu = $event->getMenu();
 
-        $cronsMenu = $menu->getChild(UserMenuBuilder::ITEM_LOGOUT);
-        $cronsMenu->getParent()->addChild(
+        $menu->addChild(
             self::ITEM_PROFILE,
             [
                 'route' => 'edgar.ezuiprofile.menu',

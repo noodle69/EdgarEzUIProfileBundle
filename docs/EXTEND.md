@@ -9,7 +9,6 @@ Your can add new menu entry
 
 ```php
 use Edgar\EzUIProfile\Menu\Event\ConfigureMenuEvent;
-use Edgar\EzUIProfile\Menu\LeftSidebarBuilder;
 use JMS\TranslationBundle\Model\Message;
 use JMS\TranslationBundle\Translation\TranslationContainerInterface;
 
@@ -24,8 +23,7 @@ class ConfigureMenuListener implements TranslationContainerInterface
     {
         $menu = $event->getMenu();
 
-        $cronsMenu = $menu->getChild(LeftSidebarBuilder::ITEM__PASSWORD);
-        $cronsMenu->getParent()->addChild(
+        $menu->addChild(
             self::ITEM_PROFILE_<menu_identifier>,
             [
                 'route' => '<menu_route>',
