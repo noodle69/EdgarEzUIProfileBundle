@@ -1,5 +1,7 @@
 {% extends "@EdgarEzUIProfile/profile/view.html.twig" %}
 
+{% form_theme form_password '@EzPlatformAdminUi/form_fields.html.twig'  %}
+
 {% block body_class %}ez-info-view{% endblock %}
 
 {% block subtitle %}
@@ -8,37 +10,26 @@
 {% endblock %}
 
 {% block profilecontent %}
-    {{ form_start(form_password, { 'action': path('edgar.ezuiprofile.password') }) }}
-        <table class="table ez-table--list">
-            <tbody>
-                <tr>
-                    <td>{{ form_label(form_password.oldPassword) }}</td>
-                    <td>{{ form_widget(form_password.oldPassword) }}</td>
-                </tr>
-                <tr>
-                    <td>{{ form_label(form_password.newPassword.first) }}</td>
-                    <td>
-                        {{ form_widget(form_password.newPassword.first) }}
-                        {{ form_errors(form_password.newPassword.first) }}
-                    </td>
-                </tr>
-                <tr>
-                    <td>{{ form_label(form_password.newPassword.second) }}</td>
-                    <td>
-                        {{ form_widget(form_password.newPassword.second) }}
-                        {{ form_errors(form_password.newPassword.second) }}
-                    </td>
-                </tr>
-            </tbody>
-        </table>
 
-        <span class="input-group-btn">
-            <button type="submit" class="btn btn-primary">
-            <svg class="ez-icon ez-icon-search-button">
-                <use xlink:href="{{ asset('bundles/ezplatformadminui/img/ez-icons.svg') }}#search"></use>
-            </svg>
-            {{ 'filter_password.submit'|trans|desc('Submit') }}</button>
-        </span>
+    {{ form_start(form_password, { 'action': path('edgar.ezuiprofile.password') }) }}
+
+    <section class="container mt-4">
+        <div class="card ez-card">
+            <div class="card-body">
+                {{ form_row(form_password.oldPassword) }}
+                {{ form_row(form_password.newPassword) }}
+            </div>
+        </div>
+    </section>
+
+    <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary">
+        <svg class="ez-icon ez-icon-search-button">
+            <use xlink:href="{{ asset('bundles/ezplatformadminui/img/ez-icons.svg') }}#search"></use>
+        </svg>
+        {{ 'filter_password.submit'|trans|desc('Submit') }}</button>
+    </span>
+
     {{ form_end(form_password) }}
 {% endblock %}
 
