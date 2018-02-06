@@ -62,7 +62,7 @@ class PasswordController extends Controller
                 $apiUser = $user->getAPIUser();
 
                 $oldPassword = $data->getOldPassword();
-                $newPassword  = $data->getNewPassword();
+                $newPassword = $data->getNewPassword();
 
                 try {
                     $this->passwordService->updatePassword($apiUser, $oldPassword, $newPassword);

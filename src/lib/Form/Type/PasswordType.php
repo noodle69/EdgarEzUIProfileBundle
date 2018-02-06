@@ -21,7 +21,7 @@ class PasswordType extends AbstractType
                 'type' => PasswordFieldType::class,
                 'invalid_message' => 'The password fields must match.',
                 'required' => true,
-                'first_options'  => ['label' => 'New password'],
+                'first_options' => ['label' => 'New password'],
                 'second_options' => ['label' => 'Repeat new password'],
             ]);
     }

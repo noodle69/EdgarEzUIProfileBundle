@@ -10,7 +10,6 @@ class ProfileController extends Controller
 {
     public function menuAction(Request $request): Response
     {
-        return $this->render('@EdgarEzUIProfile/profile/view.html.twig', [
-        ]);
+        return $this->render('@EdgarEzUIProfile/profile/view.html.twig', []);
     }
 }

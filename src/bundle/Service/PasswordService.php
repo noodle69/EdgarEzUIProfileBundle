@@ -14,7 +14,7 @@ use eZ\Publish\API\Repository\Repository;
 
 class PasswordService
 {
-    /** @var UserService  */
+    /** @var UserService */
     protected $userService;
 
     /** @var Repository */
@@ -30,6 +30,7 @@ class PasswordService
      * @param APIUser $apiUser
      * @param string $oldPassword
      * @param string $newPassword
+     *
      * @throws PasswordUpdateException
      */
     public function updatePassword(APIUser $apiUser, string $oldPassword, string $newPassword)

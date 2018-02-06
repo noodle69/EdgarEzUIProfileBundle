@@ -42,7 +42,3 @@ class ConfigureMenuEvent extends Event
         return $this->menu;
     }
 }
-
-{
-
-}

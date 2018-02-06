@@ -2,9 +2,6 @@
 
 namespace Edgar\EzUIProfile\Form\Data;
 
-use eZ\Publish\Core\Repository\Values\ContentType\ContentType;
-use Symfony\Component\Validator\Constraints as Assert;
-
 class PasswordData
 {
     /**
