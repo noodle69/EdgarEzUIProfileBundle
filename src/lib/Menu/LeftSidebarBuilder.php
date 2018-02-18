@@ -12,7 +12,10 @@ use Knp\Menu\ItemInterface;
 class LeftSidebarBuilder extends AbstractBuilder implements TranslationContainerInterface
 {
     /* Menu items */
-    const ITEM__PASSWORD = 'sidebar_left__password';
+    const ITEM__ACCOUNT = 'sidebar_left__account';
+    const ITEM__SECURITY = 'sidebar_left__security';
+    const ITEM__CONTENT = 'sidebar_left__content';
+
 
     /**
      * @return string
@@ -33,15 +36,29 @@ class LeftSidebarBuilder extends AbstractBuilder implements TranslationContainer
     {
         $menu = $this->factory->createItem('root');
 
-        $menu->addChild(
-            $this->createMenuItem(
-                self::ITEM__PASSWORD,
+        $menu->setChildren([
+            self::ITEM__ACCOUNT => $this->createMenuItem(
+                self::ITEM__ACCOUNT,
                 [
-                    'route' => 'edgar.ezuiprofile.password',
+                    'route' => 'edgar.ezuiprofile.account',
+                    'extras' => ['icon' => 'author'],
+                ]
+            ),
+            self::ITEM__SECURITY => $this->createMenuItem(
+                self::ITEM__SECURITY,
+                [
+                    'route' => 'edgar.ezuiprofile.security',
                     'extras' => ['icon' => 'lock'],
                 ]
-            )
-        );
+            ),
+            self::ITEM__CONTENT => $this->createMenuItem(
+                self::ITEM__CONTENT,
+                [
+                    'route' => 'edgar.ezuiprofile.content',
+                    'extras' => ['icon' => 'personalize-content'],
+                ]
+            ),
+        ]);
 
         return $menu;
     }
@@ -52,10 +69,18 @@ class LeftSidebarBuilder extends AbstractBuilder implements TranslationContainer
     public static function getTranslationMessages(): array
     {
         return [
-            (new Message(self::ITEM__PASSWORD, 'menu'))->setDesc('Manage your password'),
+            (new Message(self::ITEM__ACCOUNT, 'menu'))->setDesc('Account managment'),
+            (new Message(self::ITEM__SECURITY, 'menu'))->setDesc('Security configuration'),
+            (new Message(self::ITEM__CONTENT, 'menu'))->setDesc('Personal content'),
         ];
     }
 
+    /**
+     * Build menu.
+     *
+     * @param array $options
+     * @return ItemInterface
+     */
     public function build(array $options): ItemInterface
     {
         $menu = $this->createStructure($options);

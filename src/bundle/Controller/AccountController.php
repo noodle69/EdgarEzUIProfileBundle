@@ -15,7 +15,7 @@ use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
 use EzSystems\EzPlatformAdminUi\Notification\NotificationHandlerInterface;
 use Symfony\Component\Translation\TranslatorInterface;
 
-class PasswordController extends Controller
+class AccountController extends Controller
 {
     /** @var NotificationHandlerInterface */
     private $notificationHandler;

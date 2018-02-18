@@ -1,0 +1,14 @@
+{% extends "@EdgarEzUIProfile/profile/right/view.html.twig" %}
+
+{% block subtitle %}
+    {% if subtitle is not defined %}
+        {% set subtitle = 'Personal content'|trans %}
+    {% endif %}
+    {{ parent() }}
+{% endblock %}
+
+{% block right_sidebar %}
+    <div class="col-sm-1 pt-4 bg-secondary ez-context-menu">
+        {{ knp_menu_render('edgar_ezuiprofile.menu.profile.content_sidebar_right', {'template': '@EzPlatformAdminUi/parts/menu/sidebar_right.html.twig'}) }}
+    </div>
+{% endblock right_sidebar %}

@@ -8,7 +8,7 @@
             </div>
         {% endblock left_sidebar %}
 
-        <div class="col-sm-11 px-0 pb-4">
+        <div class="col-sm-10 px-0 pb-4">
             <div class="ez-header pt-1 pb-2">
                 <div class="container">
                     {% block subtitle %}
@@ -24,12 +24,12 @@
             <div class="container-fluid ez-main-container">
                 <section class="container mt-4">
                     {% block profilecontent %}
-                        {% trans %}
-                            Manage your user profile, security configuration ...
-                        {% endtrans %}
                     {% endblock %}
                 </section>
             </div>
         </div>
+
+        {% block right_sidebar %}
+        {% endblock right_sidebar %}
     </div>
 {% endblock %}

@@ -8,3 +8,18 @@ services:
         public: true
         tags:
             - { name: knp_menu.menu_builder, method: build, alias: edgar_ezuiprofile.menu.profile.sidebar_left }
+
+    Edgar\EzUIProfile\Menu\AccountRightSidebarBuilder:
+        public: true
+        tags:
+            - { name: knp_menu.menu_builder, method: build, alias: edgar_ezuiprofile.menu.profile.account_sidebar_right }
+
+    Edgar\EzUIProfile\Menu\SecurityRightSidebarBuilder:
+        public: true
+        tags:
+            - { name: knp_menu.menu_builder, method: build, alias: edgar_ezuiprofile.menu.profile.security_sidebar_right }
+
+    Edgar\EzUIProfile\Menu\ContentRightSidebarBuilder:
+        public: true
+        tags:
+            - { name: knp_menu.menu_builder, method: build, alias: edgar_ezuiprofile.menu.profile.content_sidebar_right }

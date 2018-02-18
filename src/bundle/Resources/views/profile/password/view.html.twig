@@ -1,8 +1,6 @@
-{% extends "@EdgarEzUIProfile/profile/view.html.twig" %}
+{% extends "@EdgarEzUIProfile/profile/right/account/view.html.twig" %}
 
 {% form_theme form_password '@EzPlatformAdminUi/form_fields.html.twig'  %}
-
-{% block body_class %}ez-info-view{% endblock %}
 
 {% block subtitle %}
     {% set subtitle = 'Manage your password'|trans %}
@@ -32,4 +30,3 @@
 
     {{ form_end(form_password) }}
 {% endblock %}
-

@@ -8,7 +8,7 @@
     <body>
       <trans-unit id="a29d6d5aa5131805e60ceac186b93963b5647b68" resname="The password fields must match.">
         <source>The password fields must match.</source>
-        <target state="new">The password fields must match.</target>
+        <target>The password fields must match.</target>
         <note>key: The password fields must match.</note>
       </trans-unit>
     </body>
