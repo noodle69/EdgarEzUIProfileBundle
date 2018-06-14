@@ -23,6 +23,16 @@ class ConfigureMenuListener implements TranslationContainerInterface
                 'route' => 'edgar.ezuiprofile.menu',
             ]
         );
+
+        $children = $menu->getChildren();
+        $order = array_keys($children);
+        $oldPosition = array_search(self::ITEM_PROFILE, $order);
+        unset($order[$oldPosition]);
+
+        $order = array_values($order);
+
+        array_splice($order, count($children) - 2, 0, self::ITEM_PROFILE);
+        $menu->reorderChildren($order);
     }
 
     /**
