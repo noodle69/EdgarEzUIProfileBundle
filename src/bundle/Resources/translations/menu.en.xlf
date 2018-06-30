@@ -16,11 +16,6 @@
         <target>Personal content</target>
         <note>key: sidebar_left__content</note>
       </trans-unit>
-      <trans-unit id="986d94200dc143a73ea175610c33ad96977ff53a" resname="sidebar_left__password">
-        <source>Manage your password</source>
-        <target>Manage your password</target>
-        <note>key: sidebar_left__password</note>
-      </trans-unit>
       <trans-unit id="50fe239d9955f3fe9cc839c3beeca056cb59f151" resname="sidebar_left__security">
         <source>Security configuration</source>
         <target>Security configuration</target>

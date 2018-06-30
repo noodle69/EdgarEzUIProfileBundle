@@ -8,48 +8,18 @@
     <body>
       <trans-unit id="9f6845da65daf17848d19fe4932595dcaa2275ed" resname="Account managment">
         <source>Account managment</source>
-        <target state="new">Account managment</target>
+        <target>Account managment</target>
         <note>key: Account managment</note>
-      </trans-unit>
-      <trans-unit id="824befe0c06c917773e5860b17861cab0c7af187" resname="Manage your password">
-        <source>Manage your password</source>
-        <target>Manage your password</target>
-        <note>key: Manage your password</note>
-      </trans-unit>
-      <trans-unit id="d850ee188c7c55b64bc3624534de5c5051a57dc6" resname="New password">
-        <source>New password</source>
-        <target>New password</target>
-        <note>key: New password</note>
-      </trans-unit>
-      <trans-unit id="e3053fbaa7622ccae5f59565e7fb553f9c2d79c8" resname="Old password">
-        <source>Old password</source>
-        <target>Old password</target>
-        <note>key: Old password</note>
       </trans-unit>
       <trans-unit id="b73e828439e7c28784e4e6c30e88fe864de011b0" resname="Personal content">
         <source>Personal content</source>
-        <target state="new">Personal content</target>
+        <target>Personal content</target>
         <note>key: Personal content</note>
-      </trans-unit>
-      <trans-unit id="6e6c4fbb8ab70c93e1899fdf0e7f6135f5ec9666" resname="Repeat new password">
-        <source>Repeat new password</source>
-        <target>Repeat new password</target>
-        <note>key: Repeat new password</note>
       </trans-unit>
       <trans-unit id="2fa7856c023f0cc4afa01aadfa643309a7885bfe" resname="Security configuration">
         <source>Security configuration</source>
-        <target state="new">Security configuration</target>
+        <target>Security configuration</target>
         <note>key: Security configuration</note>
-      </trans-unit>
-      <trans-unit id="69e358164bb943b8281163c4cc420a972fe37506" resname="edgarezprofile.password.message.updated">
-        <source>Password updated successfully</source>
-        <target>Password updated successfully</target>
-        <note>key: edgarezprofile.password.message.updated</note>
-      </trans-unit>
-      <trans-unit id="4b21e88b4db04e60c2f9336aae9a2441cf4b4cae" resname="filter_password.submit">
-        <source>Submit</source>
-        <target>Submit</target>
-        <note>key: filter_password.submit</note>
       </trans-unit>
       <trans-unit id="cc4475eeeef236fc0ab492647acdfeae6ffd2cf8" resname="user__content__profile">
         <source>Profile</source>

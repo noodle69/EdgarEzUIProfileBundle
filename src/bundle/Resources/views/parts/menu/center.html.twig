@@ -1,0 +1,19 @@
+{% extends 'EzPlatformAdminUiBundle:parts/menu:sidebar_base.html.twig' %}
+
+{% trans_default_domain 'messages' %}
+
+{% block item -%}
+    {%- set default_classes = 'btn btn-secondary btn-block' -%}
+    {{ parent() }}
+{%- endblock %}
+
+{% block element %}
+    {{ parent() }}
+    {{ block('description') }}
+{% endblock %}
+
+{% block description %}
+    {% if item.extras.description is defined and item.extras.description != '' %}
+        <p>{{ item.extras.description|trans }}</p>
+    {% endif %}
+{% endblock %}

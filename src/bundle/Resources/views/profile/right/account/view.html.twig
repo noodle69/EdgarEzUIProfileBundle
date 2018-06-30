@@ -12,3 +12,7 @@
         {{ knp_menu_render('edgar_ezuiprofile.menu.profile.account_sidebar_right', {'template': '@EzPlatformAdminUi/parts/menu/sidebar_right.html.twig'}) }}
     </div>
 {% endblock right_sidebar %}
+
+{% block profilecontent %}
+    {{ knp_menu_render('edgar_ezuiprofile.menu.profile.account_sidebar_right', {'template': '@EdgarEzUIProfile/parts/menu/center.html.twig'}) }}
+{% endblock %}
