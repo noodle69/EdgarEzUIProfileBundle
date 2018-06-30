@@ -1,24 +1,24 @@
 edgar.ezuiprofile.menu:
-    path: /user/profile
+    path: /
     defaults:
         _controller: 'EdgarEzUIProfileBundle:Profile:menu'
 
 edgar.ezuiprofile.account:
-    path: /user/profile/account
+    path: /account
     defaults:
         _controller: 'EdgarEzUIProfileBundle:Profile:account'
 
 edgar.ezuiprofile.security:
-    path: /user/profile/security
+    path: /security
     defaults:
         _controller: 'EdgarEzUIProfileBundle:Profile:security'
 
 edgar.ezuiprofile.content:
-    path: /user/profile/content
+    path: /content
     defaults:
         _controller: 'EdgarEzUIProfileBundle:Profile:content'
 
 edgar.ezuiprofile.password:
-    path: /user/profile/account/password
+    path: /account/password
     defaults:
         _controller: 'EdgarEzUIProfileBundle:Account:password'
