@@ -16,7 +16,6 @@ class LeftSidebarBuilder extends AbstractBuilder implements TranslationContainer
     const ITEM__SECURITY = 'sidebar_left__security';
     const ITEM__CONTENT = 'sidebar_left__content';
 
-
     /**
      * @return string
      */
@@ -79,6 +78,7 @@ class LeftSidebarBuilder extends AbstractBuilder implements TranslationContainer
      * Build menu.
      *
      * @param array $options
+     *
      * @return ItemInterface
      */
     public function build(array $options): ItemInterface
