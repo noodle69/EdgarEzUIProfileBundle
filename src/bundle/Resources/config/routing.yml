@@ -17,8 +17,3 @@ edgar.ezuiprofile.content:
     path: /content
     defaults:
         _controller: 'EdgarEzUIProfileBundle:Profile:content'
-
-edgar.ezuiprofile.password:
-    path: /account/password
-    defaults:
-        _controller: 'EdgarEzUIProfileBundle:Account:password'

@@ -12,7 +12,3 @@ services:
         public: true
         tags:
           - { name: kernel.event_listener, event: ezplatform_admin_ui.menu_configure.user_menu, method: onMenuConfigure }
-
-    Edgar\EzUIProfileBundle\Service\PasswordService: ~
-
-    Edgar\EzUIProfile\Form\Factory\FormFactory: ~
